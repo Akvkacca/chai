@@ -1,0 +1,51 @@
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+body {
+  font-family: 'Arial, sans-serif';
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #1e3c72, #2a5298);
+  color: white;
+  text-align: center;
+}
+
+.slide {
+  display: none;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.slide.active {
+  display: flex;
+}
+
+.button {
+  background-color: #f39c12;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #d35400;
+}
+
+.quote {
+  font-style: italic;
+  margin-top: 20px;
+}
+
+.image {
+  max-width: 80%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
